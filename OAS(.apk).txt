@@ -1,1 +1,4 @@
 https://drive.google.com/open?id=1QDmpMnVt7KMK4dEXe3G7XwETf793Wti1
+
+Android application for detection of corn and soybeans diseases based on image and
+symptoms
