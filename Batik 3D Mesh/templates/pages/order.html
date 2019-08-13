@@ -1,0 +1,20 @@
+{% extends "main.html" %} {% block content %}
+<h3 class="text-center">Order Form</h3>
+<hr>
+
+<form action="{{ url_for('submit_order') }}" method="POST">
+    {% include 'includes/_form-order.html' %}
+
+    <div class="form-group">
+        <br>
+        <div>
+            <a href="/result-design" class="btn btn-outline-secondary">
+                <strong>BACK</strong>
+            </a>
+            <button type="submit" class="btn btn-success float-right">
+                <b>SUBMIT</b>
+            </button>
+        </div>
+    </div>
+</form>
+{% endblock %}

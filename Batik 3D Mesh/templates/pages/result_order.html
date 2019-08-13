@@ -1,0 +1,45 @@
+{% extends "main.html" %} {% block content %}
+<h3 class="text-center">Detail Order</h3>
+<hr>
+<br>
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+
+                <p class="details">Design</p>
+                <span class="details-list">Product:</span> {{ data['design']['produk'] }}
+                <br>
+                <span class="details-list">Amount:</span> {{ data['design']['jumlah'] }}
+                <br>
+                <span class="details-list">Monument:</span> {{ data['design']['monumen'] }}
+                <br>
+                <span class="details-list">Motifs:</span> {{ data['design']['motif'] }}
+            </div>
+            <div class="col-md-6">
+                <img src="/get-result-img/{{ session['img_id'] }}" alt="result-image" class="img-fluid img-preview float-right">
+            </div>
+        </div>
+        <hr>
+        <div>
+            <p class="details">Customer</p>
+            <span class="details-list">Name:</span> {{ data['order']['nama'] }}
+            <br>
+            <span class="details-list">Telephone:</span> {{ data['order']['telp'] }}
+            <br>
+            <span class="details-list">Email:</span> {{ data['order']['email'] }}
+            <br>
+            <span class="details-list">Address:</span> {{ data['order']['alamat'] }}
+        </div>
+    </div>
+</div>
+<br>
+<div>
+    <a href="/order" class="btn btn-outline-secondary">
+        <strong>CANCEL</strong>
+    </a>
+    <a href="/finish" class="btn btn-success float-right">
+        <strong>CONFIRM</strong>
+    </a>
+</div>
+{% endblock %}

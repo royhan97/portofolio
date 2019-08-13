@@ -1,0 +1,130 @@
+.undip {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-1, .nav-2 {
+    border-bottom: 1px solid #DFDFDF;
+}
+
+.nav-2 {
+    margin-bottom: 1rem;
+}
+
+.form-check-input+label {
+    color: #777777;
+}
+
+.form-check-input:checked+label {
+    color: black;
+}
+
+.form-group .form-label {
+    color: black;
+}
+
+.img-logo {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.details {
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.details-list {
+    color: black;
+    font-weight: bold;
+}
+
+.img-preview {
+    border-radius: 5px;
+    max-width: 200px;
+    height: auto;
+    margin: 1rem;
+}
+
+.selector input {
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.selector input:active+.img-select {
+    opacity: .9;
+}
+
+.selector input:checked+.img-select {
+    -webkit-filter: none;
+    -moz-filter: none;
+    filter: none;
+}
+
+.selector input {
+    /* margin: 5px 0 0 12px; */
+}
+
+.selector label {
+    /* margin-left: 7px; */
+}
+
+.truntum {
+    background-image: url('/static/img/truntum.jpg');
+}
+
+.parang {
+    background-image: url('/static/img/parang.jpg');
+}
+
+.ceplok {
+    background-image: url('/static/img/ceplok.jpg');
+}
+
+.lawang-sewu {
+    background-image: url('/static/img/lawang-sewu.jpg');
+}
+
+.tugu-muda {
+    background-image: url('/static/img/tugu-muda.jpg');
+}
+
+.blenduk {
+    background-image: url('/static/img/blenduk.jpg');
+}
+
+.img-select {
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+    -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+    filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+
+.img-select:hover {
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+@media screen and (max-width: 800px) {
+    .selector {
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .img-select {
+        width: 150px;
+        height: 150px;
+    }
+}

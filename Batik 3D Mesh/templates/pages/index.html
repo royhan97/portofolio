@@ -1,0 +1,14 @@
+{% extends "main.html" %} {% block content %}
+<h3 class="text-center">BATIK 4.0</h3>
+<hr>
+
+<div>
+    <center>
+        <img src="/static/img/parang.jpg" alt="logo" class="img-fluid img-logo">
+    </center>
+    <br>
+    <p><small>Click CREATE DESIGN to start design</small></p>
+    <a href="{{ url_for('build_page') }}" class="btn btn-outline-danger">
+        <strong>CREATE DESIGN</strong></a>
+</div>
+{% endblock %}
